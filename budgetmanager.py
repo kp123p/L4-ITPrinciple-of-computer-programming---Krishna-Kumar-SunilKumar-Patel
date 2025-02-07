@@ -25,7 +25,9 @@ class BudgetManager:
         total_income = sum(income.amount for income in self.income_list)
         total_expenses = sum(expense.amount for expense in self.expense_list)
         balance = self.calculate_balance()
-        print(f"Total Income: {total_income}, Total Expenses: {total_expenses}, Balance: {balance}")
+        print(f"Total Income: {total_income}")
+        print(f"Total Expenses: {total_expenses}")
+        print(f"Balance: {balance}")
 
     def send_alerts(self):
         total_expenses = sum(expense.amount for expense in self.expense_list)

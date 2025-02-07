@@ -17,7 +17,7 @@ def main():
         return
 
     budget_manager = BudgetManager()
-    budget_limit = float(input("Set your monthly budget limit: "))
+    budget_limit = int(input("Set your monthly budget limit: "))
     budget_manager.set_budget_limit(budget_limit)
 
     while True:
